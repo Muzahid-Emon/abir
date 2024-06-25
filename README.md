@@ -24,37 +24,18 @@ If you need any badges visit [shields.io](https://shields.io/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login Page</title>
-</head>
-<body>
-    <h2>Login</h2>
-    <form id="loginForm" onsubmit="return validateForm()">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Login">
-    </form>
+# Login Page
 
-    <script>
-        function validateForm() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
+## Login
 
-            if (username === "admin" && password === "admin") {
-                window.location.replace("sqlpage.html");
-                return false;
-            } else {
-                alert("Invalid username or password. Please try again.");
-                return false;
-            }
-        }
-    </script>
-</body>
-</html>
+<form id="loginForm" onsubmit="return validateForm()">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Login">
+</form>
+
 
 
 ## FAQ
